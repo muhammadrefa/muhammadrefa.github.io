@@ -25,10 +25,6 @@
             }
         </style>
         
-        <!-- Timeline -->
-        <link title="timeline-styles" rel="stylesheet" href="timeline3/css/timeline.css">
-        <script src="timeline3/js/timeline.js"></script>
-        
         <!-- RSS reader -->
         <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
     </head>
@@ -39,7 +35,6 @@
         <nav class="site-header py-1">
             <div class="container d-flex flex-column flex-md-row justify-content-end">
                 <a class="py-2 px-2 d-none d-md-inline-block" href="#tentang">Tentang</a>
-                <a class="py-2 px-2 d-none d-md-inline-block" href="#tanggal-penting">Momen berharga</a>
                 <a class="py-2 px-2 d-none d-md-inline-block" href="#portofolio">Portofolio</a>
                 <a class="py-2 px-2 d-none d-md-inline-block" href="#catatan">Catatan</a>
             </div>
@@ -80,19 +75,6 @@
             <div class="d-md-flex row my-md-3 pl-md-3">
                 <div class="col-md-3 mr-md-3">
                     <div class="my-3 py-3">
-                        <h2 class="text-right" id="tanggal-penting">Momen berharga</h2>
-                    </div>
-                </div>
-                <div class="col mr-md-3">
-                    <div class="my-3 py-3 px-2">
-                        <p>Dicatat agar tidak lupa</p>
-                        <div id='timeline-embed' style="width: 100%; height: 500px"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="d-md-flex row my-md-3 pl-md-3">
-                <div class="col-md-3 mr-md-3">
-                    <div class="my-3 py-3">
                         <h2 class="text-right" id="portofolio">Portofolio</h2>
                     </div>
                 </div>
@@ -124,9 +106,4 @@
         </footer>
     </body>
     
-    <!-- Scripts -->
-    <script type="text/javascript">
-        var options = {start_at_end: true, timenav_position: 'top'}
-        var timeline = new TL.Timeline('timeline-embed', 'https://docs.google.com/spreadsheets/d/1RjhochaUUfk7QA-Y4uUxqnPa0juV0n3Wlm64xgNWU3c/', options);
-    </script>
 </html>
