@@ -7,6 +7,9 @@
 
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- OwlCarousel2 CSS -->
+        <link href="owlcarousel2/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="owlcarousel2/assets/owl.theme.default.css" rel="stylesheet">
 
         <style>
             .bd-placeholder-img {
@@ -25,8 +28,6 @@
             }
         </style>
         
-        <!-- RSS reader -->
-        <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
     </head>
     
     <body class="bg-light">
@@ -81,6 +82,73 @@
                 <div class="col mr-md-3">
                     <div class="my-3 py-3 px-2">
                         <p>Beberapa keisengan yang membuahkan hasil</p>
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            <strong>Halaman Pribadi</strong><br>
+                                            2020
+                                        </p>
+                                        <p class="card-text">
+                                            Sebuah halaman yang berisikan deskripsi singkat, portofolio, dan tulisan lainnya. Dengan kata lain, halaman yang sedang anda lihat saat ini
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            <strong>Peta Digital untuk Menunjukkan Posisi Kendaraan dan Kereta Api Menuju Perlintasan secara Realtime</strong><br>
+                                            Juni 2017
+                                        </p>
+                                        <p class="card-text">
+                                            Sistem peringatan pengemudi cerdas yang dibuat menggunakan Raspberry Pi
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            <strong><em>NFC Vending Machine</em></strong><br>
+                                            Januari 2017
+                                        </p>
+                                        <p class=card-text>
+                                            <em>Vending Machine</em> yang menggunakan gawai dengan teknologi NFC untuk melakukan pembelian dan pengambilan barang
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            <strong>Pratiwindya Nepku</strong><br>
+                                            April 2016
+                                        </p>
+                                        <p class=card-text>
+                                            Robot pemadam api yang dibuat untuk mengikuti Kontes Robot Indonesia (KRI) Regional 2 kategori KRPAI mewakili POLBAN
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            <strong>Sailfish OS <em>port</em> untuk Moto G 2013</strong><br>
+                                            September 2015
+                                        </p>
+                                        <p class=card-text>
+                                            Dibuat berdasarkan panduan dari <em>Hardware Adaptation Development Kit</em> (HADK) dari Sailfish dan #sailfishos-porters di IRC
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,6 +172,39 @@
         <footer class="container py-5 bg-light">
             <p class="text-center">Muhammad Refa Utama Putra - 2020</p>
         </footer>
+        
+        
+        <!-- Scripts -->
+        <!-- jQuery -->
+        <script src="jquery-3.5.1.min.js"></script>
+        <!-- RSS reader -->
+        <script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+        <!-- OwlCarousel2 -->
+        <script src="owlcarousel2/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.owl-carousel').owlCarousel({
+                    margin:10,
+                    nav:true,
+                    responsiveClass:true,
+                    responsive:{
+                        0:{
+                            items:1,
+                            nav:true
+                        },
+                        600:{
+                            items:2,
+                            nav:false
+                        },
+                        1000:{
+                            items:4,
+                            nav:true,
+                            loop:false
+                        }
+                    }
+                });
+            });
+        </script>
     </body>
     
 </html>
